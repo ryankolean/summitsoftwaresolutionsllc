@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2, Lightbulb, Users, Target } from 'lucide-react';
 
 export default function About() {
@@ -29,7 +28,7 @@ export default function About() {
             Accelerate Your Digital Strategy
           </h2>
           <p className="text-lg text-slate-600 mb-12">
-            Summit Software Solutions LLC helps companies discover, define, design, and develop tomorrow's innovations. We create custom software solutions that meet ambitious business goals through user-centric design and cutting-edge development practices.
+            Summit Software Solutions LLC helps companies discover, define, design, and develop tomorrow&apos;s innovations. We create custom software solutions that meet ambitious business goals through user-centric design and cutting-edge development practices.
           </p>
         </div>
 

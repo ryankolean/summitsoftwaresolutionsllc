@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold tracking-tight mb-6">
-            Let's Build Something Great Together
+            Let&apos;s Build Something Great Together
           </h2>
           <p className="text-lg text-slate-600">
             Ready to transform your business with custom software solutions? Get in touch to discuss your project and discover how Summit Software Solutions LLC can help you achieve your digital goals.
@@ -31,7 +31,7 @@ export default function Contact() {
               <div className="flex flex-col items-center justify-center h-full text-center">
                 <CheckCircle className="w-12 h-12 text-green-500 mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
-                <p className="text-slate-600">Thank you for your interest. We'll be in touch shortly.</p>
+                <p className="text-slate-600">Thank you for your interest. We&apos;ll be in touch shortly.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">

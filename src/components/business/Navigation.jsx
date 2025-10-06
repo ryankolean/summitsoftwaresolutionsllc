@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Navigation({ scrollToSection }) {
   const navItems = [
     { id: 'home', label: 'Home' },

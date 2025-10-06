@@ -1,5 +1,3 @@
-import React from "react";
-
 import Navigation from "../components/business/Navigation";
 import Hero from "../components/business/Hero";
 import About from "../components/business/About";
