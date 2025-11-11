@@ -11,19 +11,30 @@ export default function Solutions() {
           </h2>
         </div>
 
-        <div className="max-w-3xl mx-auto border border-slate-200 rounded-lg p-10">
-          <h3 className="text-2xl font-bold mb-4">
-            EstateSync - Real Estate Portfolio Management Platform
-          </h3>
-          <p className="text-lg text-slate-600 mb-6">
-            Comprehensive real estate portfolio management solution that streamlines property tracking, assists with MLS data collection, and provides valuable insights for real estate professionals.
-          </p>
-          <Button asChild variant="outline">
-            <a href="https://estatesync.app/" target="_blank" rel="noopener noreferrer">
-              Learn More
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
-          </Button>
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="border border-slate-200 rounded-lg p-10">
+            <h3 className="text-2xl font-bold mb-4">
+              EstateSync - Real Estate Portfolio Management Platform
+            </h3>
+            <p className="text-lg text-slate-600 mb-6">
+              Comprehensive real estate portfolio management solution that streamlines property tracking, assists with MLS data collection, and provides valuable insights for real estate professionals.
+            </p>
+            <Button asChild variant="outline">
+              <a href="https://estatesync.app/" target="_blank" rel="noopener noreferrer">
+                Learn More
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
+
+          <div className="border border-slate-200 rounded-lg p-10">
+            <h3 className="text-2xl font-bold mb-4">
+              Custom Landing Page
+            </h3>
+            <p className="text-lg text-slate-600 mb-6">
+              Showcase your unique value and own your digital footprint—our custom landing pages help you captivate, convert, and grow your customer base!
+            </p>
+          </div>
         </div>
       </div>
     </section>
