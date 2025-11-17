@@ -15,6 +15,12 @@ export default function Solutions() {
       title: 'Custom Landing Page',
       description: 'Showcase your unique value and own your digital footprint—our custom landing pages help you captivate, convert, and grow your customer base!',
       link: null
+    },
+    {
+      id: 3,
+      title: 'Automated Phone Service',
+      description: 'Service that is customized exactly for your business and your customers. Saves your time, money, and hassle! We have you up and running in days. Save on hiring and let us manage your phones for you!',
+      link: null
     }
   ];
 
