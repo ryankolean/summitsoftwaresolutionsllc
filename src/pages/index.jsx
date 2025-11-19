@@ -1,13 +1,15 @@
 import Layout from "./Layout.jsx";
 
 import Home from "./Home";
+import AutomatedPhoneService from "./AutomatedPhoneService";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
-    
+
     Home: Home,
-    
+    AutomatedPhoneService: AutomatedPhoneService,
+
 }
 
 function _getCurrentPage(url) {
@@ -30,13 +32,15 @@ function PagesContent() {
     
     return (
         <Layout currentPageName={currentPage}>
-            <Routes>            
-                
+            <Routes>
+
                     <Route path="/" element={<Home />} />
-                
-                
+
+
                 <Route path="/Home" element={<Home />} />
-                
+
+                <Route path="/AutomatedPhoneService" element={<AutomatedPhoneService />} />
+
             </Routes>
         </Layout>
     );

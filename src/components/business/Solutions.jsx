@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Solutions() {
   const solutions = [
@@ -8,19 +9,22 @@ export default function Solutions() {
       id: 1,
       title: 'EstateSync - Real Estate Portfolio Management Platform',
       description: 'Comprehensive real estate portfolio management solution that streamlines property tracking, assists with MLS data collection, and provides valuable insights for real estate professionals.',
-      link: 'https://estatesync.app/'
+      link: 'https://estatesync.app/',
+      isExternal: true
     },
     {
       id: 2,
       title: 'Custom Landing Page',
       description: 'Showcase your unique value and own your digital footprint—our custom landing pages help you captivate, convert, and grow your customer base!',
-      link: null
+      link: null,
+      isExternal: false
     },
     {
       id: 3,
       title: 'Automated Phone Service',
       description: 'Service that is customized exactly for your business and your customers. Saves your time, money, and hassle! We have you up and running in days. Save on hiring and let us manage your phones for you!',
-      link: null
+      link: '/AutomatedPhoneService',
+      isExternal: false
     }
   ];
 
@@ -98,15 +102,25 @@ export default function Solutions() {
                     </p>
                     {solution.link && (
                       <Button asChild variant="outline">
-                        <a
-                          href={solution.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          tabIndex={currentIndex === index ? 0 : -1}
-                        >
-                          Learn More
-                          <ArrowRight className="ml-2 w-4 h-4" />
-                        </a>
+                        {solution.isExternal ? (
+                          <a
+                            href={solution.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            tabIndex={currentIndex === index ? 0 : -1}
+                          >
+                            Learn More
+                            <ArrowRight className="ml-2 w-4 h-4" />
+                          </a>
+                        ) : (
+                          <Link
+                            to={solution.link}
+                            tabIndex={currentIndex === index ? 0 : -1}
+                          >
+                            Learn More
+                            <ArrowRight className="ml-2 w-4 h-4" />
+                          </Link>
+                        )}
                       </Button>
                     )}
                   </div>
