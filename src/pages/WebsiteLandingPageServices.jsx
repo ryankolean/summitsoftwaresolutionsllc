@@ -40,8 +40,8 @@ export default function WebsiteLandingPageServices() {
   const pricingTiers = [
     {
       name: 'Simple',
-      setupFee: 650,
-      monthlyFee: 79,
+      setupFee: 100,
+      monthlyFee: 30,
       turnaround: '1-2 weeks',
       description: 'Perfect for getting your business online quickly and affordably',
       subtitle: 'Small businesses without an online presence',
@@ -61,8 +61,8 @@ export default function WebsiteLandingPageServices() {
     },
     {
       name: 'Professional',
-      setupFee: 1500,
-      monthlyFee: 129,
+      setupFee: 500,
+      monthlyFee: 100,
       turnaround: '2-3 weeks',
       description: 'Expand your reach with a complete multi-page website and SEO optimization',
       subtitle: 'Growing businesses looking to increase online presence',
@@ -82,8 +82,8 @@ export default function WebsiteLandingPageServices() {
     },
     {
       name: 'Enterprise',
-      setupFee: 3200,
-      monthlyFee: 249,
+      setupFee: 1000,
+      monthlyFee: 200,
       turnaround: '4-6 weeks',
       description: 'Full-service website solution with all the bells and whistles',
       subtitle: 'Established businesses wanting a complete package',
@@ -695,9 +695,9 @@ export default function WebsiteLandingPageServices() {
                     required
                   >
                     <option value="">Select a tier...</option>
-                    <option value="simple">Simple - $79/month</option>
-                    <option value="professional">Professional - $129/month</option>
-                    <option value="enterprise">Enterprise - $249/month</option>
+                    <option value="simple">Simple - $30/month</option>
+                    <option value="professional">Professional - $100/month</option>
+                    <option value="enterprise">Enterprise - $200/month</option>
                     <option value="custom">Custom - Contact for Quote</option>
                     <option value="not-sure">Not sure yet</option>
                   </select>
