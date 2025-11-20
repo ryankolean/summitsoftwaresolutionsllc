@@ -16,7 +16,7 @@ export default function Solutions() {
       id: 2,
       title: 'Custom Landing Page',
       description: 'Showcase your unique value and own your digital footprint—our custom landing pages help you captivate, convert, and grow your customer base!',
-      link: null,
+      link: '/WebsiteLandingPageServices',
       isExternal: false
     },
     {

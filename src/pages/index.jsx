@@ -2,6 +2,7 @@ import Layout from "./Layout.jsx";
 
 import Home from "./Home";
 import AutomatedPhoneService from "./AutomatedPhoneService";
+import WebsiteLandingPageServices from "./WebsiteLandingPageServices";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ const PAGES = {
 
     Home: Home,
     AutomatedPhoneService: AutomatedPhoneService,
+    WebsiteLandingPageServices: WebsiteLandingPageServices,
 
 }
 
@@ -40,6 +42,8 @@ function PagesContent() {
                 <Route path="/Home" element={<Home />} />
 
                 <Route path="/AutomatedPhoneService" element={<AutomatedPhoneService />} />
+
+                <Route path="/WebsiteLandingPageServices" element={<WebsiteLandingPageServices />} />
 
             </Routes>
         </Layout>
