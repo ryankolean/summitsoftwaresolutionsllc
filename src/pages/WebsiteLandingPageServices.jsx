@@ -169,43 +169,35 @@ export default function WebsiteLandingPageServices() {
   const addOns = [
     {
       title: 'Additional Pages',
-      description: 'Add more pages beyond your tier limits',
-      pricing: 'Starting at $150 per page'
+      description: 'Add more pages beyond your tier limits'
     },
     {
       title: 'E-commerce Store',
-      description: 'Full online store with product catalog and checkout',
-      pricing: 'Custom quote based on catalog size'
+      description: 'Full online store with product catalog and checkout'
     },
     {
       title: 'Custom API Integrations',
-      description: 'Connect to CRM, payment processors, and other tools',
-      pricing: 'Starting at $500 per integration'
+      description: 'Connect to CRM, payment processors, and other tools'
     },
     {
       title: 'Advanced SEO Package',
-      description: 'Comprehensive SEO strategy with ongoing optimization',
-      pricing: '$800 one-time + $200/month maintenance'
+      description: 'Comprehensive SEO strategy with ongoing optimization'
     },
     {
       title: 'Content Writing Services',
-      description: 'Professional copywriting for all pages',
-      pricing: '$200-$400 per page'
+      description: 'Professional copywriting for all pages'
     },
     {
       title: 'Logo & Branding Design',
-      description: 'Complete brand identity package',
-      pricing: 'Starting at $1,200'
+      description: 'Complete brand identity package'
     },
     {
       title: 'Custom Web Applications',
-      description: 'Interactive tools, calculators, booking systems',
-      pricing: 'Custom quote based on requirements'
+      description: 'Interactive tools, calculators, booking systems'
     },
     {
       title: 'Multi-language Support',
-      description: 'Reach international audiences',
-      pricing: '$300 per additional language'
+      description: 'Reach international audiences'
     }
   ];
 
@@ -512,9 +504,6 @@ export default function WebsiteLandingPageServices() {
                     <CardTitle className="text-lg">{addOn.title}</CardTitle>
                     <CardDescription className="text-sm">{addOn.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-sm font-semibold text-blue-600">{addOn.pricing}</p>
-                  </CardContent>
                 </Card>
               ))}
             </div>
