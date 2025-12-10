@@ -42,7 +42,7 @@ export default function AutomatedPhoneService() {
       setupFee: 500,
       description: 'Perfect entry point for sole and small businesses',
       features: [
-        'Up to 100 calls/month',
+        'Unlimited calls',
         'Basic call routing',
         'Voicemail transcription',
         'Email notifications',
@@ -59,7 +59,7 @@ export default function AutomatedPhoneService() {
       description: 'Most popular choice for scaling operations',
       subtitle: 'Growing businesses (10-50 employees)',
       features: [
-        'Up to 500 calls/month',
+        'Unlimited calls',
         'Advanced call routing',
         'Voicemail transcription',
         'SMS & email notifications',
@@ -78,7 +78,7 @@ export default function AutomatedPhoneService() {
       description: 'Comprehensive solution for complex needs',
       subtitle: 'Established companies (50+ employees)',
       features: [
-        'Up to 1,500 calls/month',
+        'Unlimited calls',
         'Priority call routing',
         'Multi-language support',
         'Advanced CRM integration',
@@ -171,8 +171,8 @@ export default function AutomatedPhoneService() {
       answer: 'Absolutely! You have complete control over greetings, responses, and workflows. We work with you during setup to ensure the AI reflects your business processes and communication style. Updates can be made anytime through your dashboard.'
     },
     {
-      question: 'What if I exceed my monthly call limit?',
-      answer: 'We\'ll notify you as you approach your limit. Overage calls are billed at a reasonable per-call rate. Most clients find their plan accommodates their needs, but you can upgrade anytime if your call volume grows.'
+      question: 'Are there really unlimited calls included?',
+      answer: 'Yes! All of our plans include unlimited calls with no overage fees or hidden charges. Whether you receive 10 calls or 10,000 calls per month, your pricing stays the same. This gives you complete peace of mind as your business grows.'
     },
     {
       question: 'Is my data secure?',
