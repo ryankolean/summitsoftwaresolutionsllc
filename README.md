@@ -1,8 +1,8 @@
-# Base44 App
+# Summit Software Solutions LLC App
 
 
-This app was created automatically by Base44.
-It's a Vite+React app that communicates with the Base44 API.
+This app was created by Summit Software Solutions LLC.
+It's a Vite+React app for business solutions.
 
 ## Running the app
 
@@ -17,4 +17,4 @@ npm run dev
 npm run build
 ```
 
-For more information and support, please contact Base44 support at app@base44.com.
+For more information and support, please contact Summit Software Solutions LLC at info@summitsoftwaresolutions.dev.

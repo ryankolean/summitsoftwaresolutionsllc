@@ -734,7 +734,7 @@ export default function WebsiteLandingPageServices() {
 
       <footer className="py-8 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 text-center text-slate-600 text-sm">
-          <p>&copy; 2025 Summit Software Solutions. All rights reserved.</p>
+          <p>&copy; 2025 Summit Software Solutions LLC. All rights reserved.</p>
         </div>
       </footer>
     </div>
