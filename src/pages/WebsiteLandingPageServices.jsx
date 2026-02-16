@@ -602,10 +602,7 @@ export default function WebsiteLandingPageServices() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <a
-              href="tel:+12488829055"
-              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
-            >
+            <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center">
               <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
                 <Phone className="w-7 h-7 text-blue-600" />
               </div>
@@ -613,25 +610,15 @@ export default function WebsiteLandingPageServices() {
               <p className="text-blue-600 font-semibold text-lg mb-3">(248) 882-9055</p>
               <p className="text-sm text-slate-500">Experience our automated call handling system by calling us directly</p>
               <p className="text-xs text-slate-400 mt-3">Best for consultations and pricing questions</p>
-            </a>
+              <a
+                href="tel:+12488829055"
+                className="inline-block mt-5 px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors"
+              >
+                Call Now
+              </a>
+            </div>
 
-            <a
-              href="mailto:info@summitsoftwaresolutions.com"
-              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
-            >
-              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
-                <Mail className="w-7 h-7 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Send us an email</h3>
-              <p className="text-blue-600 font-semibold text-sm mb-3 break-all">info@summitsoftwaresolutions.com</p>
-              <p className="text-sm text-slate-500">We typically respond within one business day</p>
-              <p className="text-xs text-slate-400 mt-3">Best for project details and proposals</p>
-            </a>
-
-            <a
-              href="sms:+12488829055"
-              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
-            >
+            <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center">
               <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
                 <MessageSquare className="w-7 h-7 text-blue-600" />
               </div>
@@ -639,7 +626,28 @@ export default function WebsiteLandingPageServices() {
               <p className="text-blue-600 font-semibold text-lg mb-3">(248) 882-9055</p>
               <p className="text-sm text-slate-500">Send a quick text and we&apos;ll get back to you</p>
               <p className="text-xs text-slate-400 mt-3">Best for quick questions</p>
-            </a>
+              <a
+                href="sms:+12488829055"
+                className="inline-block mt-5 px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors"
+              >
+                Send Text
+              </a>
+            </div>
+
+            <div className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center">
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
+                <Mail className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Send us an email</h3>
+              <p className="text-sm text-slate-500">We typically respond within one business day</p>
+              <p className="text-xs text-slate-400 mt-3">Best for project details and proposals</p>
+              <a
+                href="mailto:info@summitsoftwaresolutions.com"
+                className="inline-block mt-5 px-6 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors"
+              >
+                Email Us
+              </a>
+            </div>
           </div>
         </div>
       </section>
