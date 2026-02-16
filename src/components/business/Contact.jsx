@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { CheckCircle, Linkedin, Mail } from 'lucide-react';
+import { CheckCircle, Linkedin, Mail, Phone } from 'lucide-react';
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -57,26 +57,35 @@ export default function Contact() {
               </form>
             )}
           </div>
-          
+
           <div className="space-y-6 flex flex-col justify-center">
+            <a href="tel:+12488829055" className="flex items-center gap-4 group">
+              <div className="w-12 h-12 bg-white border border-slate-200 rounded-full flex items-center justify-center">
+                <Phone className="w-6 h-6 text-slate-500" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">(248) 882-9055</h4>
+                <p className="text-sm text-slate-600">Experience our automated call handling system by calling us directly</p>
+              </div>
+            </a>
+            <a href="mailto:info@summitsoftwaresolutions.com" className="flex items-center gap-4 group">
+              <div className="w-12 h-12 bg-white border border-slate-200 rounded-full flex items-center justify-center">
+                <Mail className="w-6 h-6 text-slate-500" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">info@summitsoftwaresolutions.com</h4>
+                <p className="text-sm text-slate-600">Send us an email anytime</p>
+              </div>
+            </a>
             <a href="https://www.linkedin.com/company/summit-software-solutions-llc/about/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
               <div className="w-12 h-12 bg-white border border-slate-200 rounded-full flex items-center justify-center">
                 <Linkedin className="w-6 h-6 text-slate-500" />
               </div>
               <div>
                 <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Follow us on LinkedIn</h4>
-                <p className="text-slate-600">Company Page</p>
+                <p className="text-sm text-slate-600">Company Page</p>
               </div>
             </a>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-white border border-slate-200 rounded-full flex items-center justify-center">
-                <Mail className="w-6 h-6 text-slate-500" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-slate-900">Email Us</h4>
-                <p className="text-slate-600">info@summitsoftwaresolutions.com</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

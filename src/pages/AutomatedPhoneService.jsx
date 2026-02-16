@@ -548,6 +548,25 @@ export default function AutomatedPhoneService() {
               <span className="text-sm">PCI-DSS Compliant</span>
             </div>
           </div>
+
+          <div className="mt-10 text-center">
+            <p className="text-slate-600 mb-4">
+              Prefer to reach us directly?
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm">
+              <a href="tel:+12488829055" className="text-blue-600 hover:text-blue-700 font-medium flex items-center justify-center gap-2">
+                <Phone className="w-4 h-4" />
+                (248) 882-9055
+              </a>
+              <a href="mailto:info@summitsoftwaresolutions.com" className="text-blue-600 hover:text-blue-700 font-medium flex items-center justify-center gap-2">
+                <HeadphonesIcon className="w-4 h-4" />
+                info@summitsoftwaresolutions.com
+              </a>
+            </div>
+            <p className="text-xs text-slate-500 mt-3">
+              Experience our automated call handling system by calling us directly
+            </p>
+          </div>
         </div>
       </section>
 

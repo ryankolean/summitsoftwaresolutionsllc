@@ -720,14 +720,17 @@ export default function WebsiteLandingPageServices() {
             <p className="text-slate-600 mb-4">
               Questions? Call us or send an email and we'll respond promptly.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <a href="tel:+15551234567" className="text-blue-600 hover:text-blue-700 font-medium">
-                (555) 123-4567
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 text-sm">
+              <a href="tel:+12488829055" className="text-blue-600 hover:text-blue-700 font-medium">
+                (248) 882-9055
               </a>
-              <a href="mailto:info@summitsoftwaresolutions.dev" className="text-blue-600 hover:text-blue-700 font-medium">
-                info@summitsoftwaresolutions.dev
+              <a href="mailto:info@summitsoftwaresolutions.com" className="text-blue-600 hover:text-blue-700 font-medium">
+                info@summitsoftwaresolutions.com
               </a>
             </div>
+            <p className="text-xs text-slate-500 mt-3">
+              Experience our automated call handling system by calling us directly
+            </p>
           </div>
         </div>
       </section>
