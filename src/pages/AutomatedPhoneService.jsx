@@ -460,7 +460,7 @@ export default function AutomatedPhoneService() {
                 <Mail className="w-7 h-7 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Send us an email</h3>
-              <p className="text-blue-600 font-semibold mb-3">info@summitsoftwaresolutions.com</p>
+              <p className="text-blue-600 font-semibold text-sm mb-3 break-all">info@summitsoftwaresolutions.com</p>
               <p className="text-sm text-slate-500">We typically respond within one business day</p>
               <p className="text-xs text-slate-400 mt-3">Best for detailed project requirements</p>
             </a>
