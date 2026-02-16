@@ -1,9 +1,5 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import {
@@ -19,23 +15,13 @@ import {
   Search,
   BarChart3,
   Globe,
-  Rocket
+  Rocket,
+  Phone,
+  Mail,
+  MessageSquare
 } from 'lucide-react';
 
 export default function WebsiteLandingPageServices() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    tier: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   const pricingTiers = [
     {
@@ -604,133 +590,56 @@ export default function WebsiteLandingPageServices() {
       </section>
 
       <section id="contact" className="py-20">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight mb-4">
               Ready to Launch Your Website?
             </h2>
             <p className="text-lg text-slate-600">
-              Schedule a free consultation with our team. We'll discuss your goals, recommend the best
+              Reach out directly to schedule a free consultation. We&apos;ll discuss your goals, recommend the best
               tier for your needs, and answer any questions you have.
             </p>
           </div>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Get Started Today</CardTitle>
-              <CardDescription>
-                Fill out the form below and we'll be in touch within 24 hours to schedule your free consultation.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name *</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Smith"
-                      required
-                    />
-                  </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <a
+              href="tel:+12488829055"
+              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
+            >
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
+                <Phone className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Call us now</h3>
+              <p className="text-blue-600 font-semibold text-lg mb-3">(248) 882-9055</p>
+              <p className="text-sm text-slate-500">Experience our automated call handling system by calling us directly</p>
+              <p className="text-xs text-slate-400 mt-3">Best for consultations and pricing questions</p>
+            </a>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="john@company.com"
-                      required
-                    />
-                  </div>
-                </div>
+            <a
+              href="mailto:info@summitsoftwaresolutions.com"
+              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
+            >
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
+                <Mail className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Send us an email</h3>
+              <p className="text-blue-600 font-semibold mb-3">info@summitsoftwaresolutions.com</p>
+              <p className="text-sm text-slate-500">We typically respond within one business day</p>
+              <p className="text-xs text-slate-400 mt-3">Best for project details and proposals</p>
+            </a>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="company">Business Name *</Label>
-                    <Input
-                      id="company"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      placeholder="Your Business"
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number *</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="(555) 123-4567"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="tier">Which tier are you interested in? *</Label>
-                  <select
-                    id="tier"
-                    value={formData.tier}
-                    onChange={(e) => setFormData({ ...formData, tier: e.target.value })}
-                    className="w-full h-10 px-3 rounded-md border border-slate-300 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                    required
-                  >
-                    <option value="">Select a tier...</option>
-                    <option value="simple">Simple - $30/month</option>
-                    <option value="professional">Professional - $100/month</option>
-                    <option value="enterprise">Enterprise - $200/month</option>
-                    <option value="custom">Custom - Contact for Quote</option>
-                    <option value="not-sure">Not sure yet</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Tell us about your project *</Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="What are your goals for this website? Do you have existing branding? Any specific features you need?"
-                    rows={4}
-                    required
-                  />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full">
-                  Request Free Consultation
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-
-                <p className="text-sm text-slate-500 text-center">
-                  By submitting this form, you agree to be contacted by our team regarding your inquiry.
-                </p>
-              </form>
-            </CardContent>
-          </Card>
-
-          <div className="mt-12 text-center">
-            <p className="text-slate-600 mb-4">
-              Questions? Call us or send an email and we'll respond promptly.
-            </p>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 text-sm">
-              <a href="tel:+12488829055" className="text-blue-600 hover:text-blue-700 font-medium">
-                (248) 882-9055
-              </a>
-              <a href="mailto:info@summitsoftwaresolutions.com" className="text-blue-600 hover:text-blue-700 font-medium">
-                info@summitsoftwaresolutions.com
-              </a>
-            </div>
-            <p className="text-xs text-slate-500 mt-3">
-              Experience our automated call handling system by calling us directly
-            </p>
+            <a
+              href="sms:+12488829055"
+              className="group bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all text-center"
+            >
+              <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-blue-100 transition-colors">
+                <MessageSquare className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Text us</h3>
+              <p className="text-blue-600 font-semibold text-lg mb-3">(248) 882-9055</p>
+              <p className="text-sm text-slate-500">Send a quick text and we&apos;ll get back to you</p>
+              <p className="text-xs text-slate-400 mt-3">Best for quick questions</p>
+            </a>
           </div>
         </div>
       </section>
