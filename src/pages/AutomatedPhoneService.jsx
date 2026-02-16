@@ -18,6 +18,7 @@ import {
   Mail,
   MessageSquare
 } from 'lucide-react';
+import Footer from '@/components/business/Footer';
 
 export default function AutomatedPhoneService() {
 
@@ -504,11 +505,7 @@ export default function AutomatedPhoneService() {
         </div>
       </section>
 
-      <footer className="py-8 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 text-center text-slate-600 text-sm">
-          <p>&copy; 2025 Summit Software Solutions LLC. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
